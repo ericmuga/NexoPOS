@@ -87,11 +87,11 @@ class MenuService
                     //     'permissions' => [ 'nexopos.create.customers-groups' ],
                     //     'href' => ns()->url( '/dashboard/customers/groups/create' ),
                     // ],
-                    'list-reward-system' => [
-                        'label' => __( 'Reward Systems' ),
-                        'permissions' => [ 'nexopos.read.rewards' ],
-                        'href' => ns()->url( '/dashboard/customers/rewards-system' ),
-                    ],
+                    // 'list-reward-system' => [
+                    //     'label' => __( 'Reward Systems' ),
+                    //     'permissions' => [ 'nexopos.read.rewards' ],
+                    //     'href' => ns()->url( '/dashboard/customers/rewards-system' ),
+                    // ],
                     // 'create-reward-system' => [
                     //     'label' => __( 'Create Reward' ),
                     //     'permissions' => [ 'nexopos.create.rewards' ],
