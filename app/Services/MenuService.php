@@ -395,7 +395,7 @@ class MenuService
                         'href' => ns()->url( '/dashboard/reports/sold-stock' ),
                     ],
                     'profit' => [
-                        'label' => __( 'Incomes & Loosses' ),
+                        'label' => __( 'Incomes & Losses' ),
                         'href' => ns()->url( '/dashboard/reports/profit' ),
                     ],
                     'transactions' => [
