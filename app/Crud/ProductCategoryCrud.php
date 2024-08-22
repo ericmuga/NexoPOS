@@ -106,15 +106,15 @@ class ProductCategoryCrud extends CrudService
     public function getLabels()
     {
         return [
-            'list_title' => __( 'Category Products List' ),
-            'list_description' => __( 'Display all category products.' ),
-            'no_entry' => __( 'No category products has been registered' ),
-            'create_new' => __( 'Add a new category product' ),
-            'create_title' => __( 'Create a new category product' ),
-            'create_description' => __( 'Register a new category product and save it.' ),
-            'edit_title' => __( 'Edit category product' ),
-            'edit_description' => __( 'Modify  Category Product.' ),
-            'back_to_list' => __( 'Return to Category Products' ),
+            'list_title' => __( 'Category List' ),
+            'list_description' => __( 'Display all categories.' ),
+            'no_entry' => __( 'No category has been registered' ),
+            'create_new' => __( 'Add a new category ' ),
+            'create_title' => __( 'Create a new category ' ),
+            'create_description' => __( 'Register a new category  and save it.' ),
+            'edit_title' => __( 'Edit category' ),
+            'edit_description' => __( 'Modify  Category.' ),
+            'back_to_list' => __( 'Return to Category' ),
         ];
     }
 
