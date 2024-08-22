@@ -132,15 +132,15 @@ class ProcurementProductCrud extends CrudService
     public function getLabels()
     {
         return [
-            'list_title' => __( 'Procurement Products List' ),
-            'list_description' => __( 'Display all procurement products.' ),
-            'no_entry' => __( 'No procurement products has been registered' ),
-            'create_new' => __( 'Add a new procurement product' ),
-            'create_title' => __( 'Create a new procurement product' ),
-            'create_description' => __( 'Register a new procurement product and save it.' ),
-            'edit_title' => __( 'Edit procurement product' ),
-            'edit_description' => __( 'Modify  Procurement Product.' ),
-            'back_to_list' => __( 'Return to Procurement Products' ),
+            'list_title' => __( 'Purchased Products List' ),
+            'list_description' => __( 'Display all purchased products.' ),
+            'no_entry' => __( 'No purchased products has been registered' ),
+            'create_new' => __( 'Add a new purchased product' ),
+            'create_title' => __( 'Create a new purchased product' ),
+            'create_description' => __( 'Purchase new product and save it.' ),
+            'edit_title' => __( 'Edit purchased product' ),
+            'edit_description' => __( 'Modify  purchased Product.' ),
+            'back_to_list' => __( 'Return to purchased Products' ),
         ];
     }
 
