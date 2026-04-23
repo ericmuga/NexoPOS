@@ -21,6 +21,7 @@ use App\Http\Requests\SignInRequest;
 use App\Http\Requests\SignUpRequest;
 use App\Mail\ResetPasswordMail;
 use App\Models\User;
+use App\Services\DomainAuthService;
 use App\Services\UsersService;
 use Carbon\Carbon;
 use Exception;
@@ -34,7 +35,7 @@ use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
-    public function __construct( private UsersService $userService )
+    public function __construct( private UsersService $userService, private DomainAuthService $domainAuthService )
     {
 
     }
@@ -148,6 +149,18 @@ class AuthController extends Controller
             'username' => $request->input( 'username' ),
             'password' => $request->input( 'password' ),
         ] );
+
+        if ( ! $attempt && $this->domainAuthService->enabled() ) {
+            $user = $this->domainAuthService->authenticate(
+                $request->input( 'username' ),
+                $request->input( 'password' )
+            );
+
+            if ( $user instanceof User ) {
+                Auth::login( $user );
+                $attempt = true;
+            }
+        }
 
         if ( $request->expectsJson() ) {
             return $this->handleJsonRequests( $request, $attempt );

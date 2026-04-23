@@ -10,6 +10,5 @@ return [
     App\Providers\LocalizationServiceProvider::class,
     App\Providers\ModulesServiceProvider::class,
     App\Providers\SettingsPageProvider::class,
-    App\Providers\TelescopeServiceProvider::class,
     App\Providers\WidgetsServiceProvider::class,
 ];
